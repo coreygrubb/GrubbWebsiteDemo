@@ -593,9 +593,62 @@ main {
     Pricing
 */
 
+#pricing {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    width: 100%;
+    background:white;
+    justify-content: center;
+    align-items: center;
+}
 
+.price-chart {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    height: 25%;
+    width: 75%;
+    border:double;
+}
 
+#plan-basic {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+    background-color: lightblue;
+    font-size: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
 
+#basic-features {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 55%;
+    background-color: lightcoral;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    padding-right:25px;
+}
+
+#basic-features ul{
+    list-style-type: none;
+}
+
+#basic-price {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    background-color: lightcyan;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
 
 
 
@@ -606,10 +659,9 @@ main {
 	Contact
 
 */
-
 #form {
-	height: 800px;
-	width:100%;
+    height: 800px;
+    width: 100%;
 }
 
 #googlemaps {
