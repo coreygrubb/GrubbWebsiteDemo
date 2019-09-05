@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="Content/app.css" rel="stylesheet" />
     <link href="Content/animate.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <section id="header">
@@ -120,13 +121,11 @@
             <img id="cam" src="Content\Images\1.png" alt="Card image cap">
         </section>
     </section>
-
-
-
-
     <section id="pricing">
         <section id="price-calculator">
+            <h1>Estimate the Cost of Your Site</h1>
             <section class="calculator-row1">
+                <h3>Number of Marketing Pages</h3>
                 <select id="select-pages">
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -134,47 +133,78 @@
                     <option value="4">Four +</option>
                 </select>
             </section>
-            <section class="calculator-row2">
-                <h3>User Login</h3>
-                <div class="box">
-                    <input id="toggle-email" type="checkbox">
-                    <label id="toggle-label" for="toggle-email">Email & Password</label>
-                </div>
-                <div class="box">
-                    <input id="toggle-social" type="checkbox">
-                    <label id="toggle-label" for="toggle-social">Social Media</label>
-                </div>
-                <h3>Payment System</h3>
-                <div class="box">
-                    <input id="toggle-credit" type="checkbox">
-                    <label id="toggle-label" for="toggle-credit">Credit Card</label>
-                </div>
-                <div class="box">
-                    <input id="toggle-btc" type="checkbox">
-                    <label id="toggle-label" for="toggle-btc">Bitcoin</label>
-                </div>
-                <h3>Payment System</h3>
-                <div class="box">
-                    <input id="toggle-btc" type="checkbox">
-                    <label id="toggle-label" for="toggle-btc">Bitcoin</label>
-                </div>
-                <div class="box">
-                    <input id="toggle-btc" type="checkbox">
-                    <label id="toggle-label" for="toggle-btc">Bitcoin</label>
-                </div>
-            </section>
+            <h1>Website Category</h1>
             <section class="calculator-row3">
-                <!--<input type="checkbox" class="option" value="" />Dashboard <br />
-                <input type="checkbox" class="option" value="" />User Profile <br />
-                <input type="checkbox" class="option" value="" />Reviews and Ratings <br />
-                <input type="checkbox" class="option" value="" />Search Features <br />
-                <input type="checkbox" class="option" value="" />Messaging System <br />
-                <input type="checkbox" class="option" value="" />Photo/Video Gallery <br />-->
+                <label for="radio1"><input type="radio" name="radio1" class="option" value="200" /> Blog</label><br>
+                <label for="radio1"><input type="radio" name="radio1" class="option" value="300" /> Business</label><br>
+                <label for="radio1"><input type="radio" name="radio1" class="option" value="400" /> Brochure</label><br>
+                <label for="radio1"><input type="radio" name="radio1" class="option" value="500" /> eCommerce</label><br>
+                <label for="radio1"><input type="radio" name="radio1" class="option" value="600" /> Portal</label><br>
+                <label for="radio1"><input type="radio" name="radio1" class="option" value="700" /> Social Media</label><br>
+                <label for="radio1"><input type="radio" name="radio1" class="option" value="0" /> Other</label>
             </section>
+            <section class="calculator-row2">
+                <h2>User Login</h2>
+                <div class="box">
+                    <input class="hide-checkbox option" id="toggle-email" type="checkbox" value="100">
+                    <label class="toggle-label" for="toggle-email">Email & Password</label>
+                </div>
+                <div class="box">
+                    <input class="hide-checkbox option" id="toggle-social" type="checkbox" value="200">
+                    <label class="toggle-label" for="toggle-social">Social Media</label>
+                </div>
+                <h2>Payment System</h2>
+                <div class="box">
+                    <input class="hide-checkbox" id="toggle-credit" type="checkbox">
+                    <label class="toggle-label" for="toggle-credit">Credit Card</label>
+                </div>
+                <div class="box">
+                    <input class="hide-checkbox" id="toggle-btc" type="checkbox">
+                    <label class="toggle-label" for="toggle-btc">Bitcoin</label>
+                </div>
+                <h2>Additional Features</h2>
+                <div class="box">
+                    <input class="hide-checkbox" id="toggle-search" type="checkbox">
+                    <label class="toggle-label" for="toggle-search">Search Feature</label>
+                </div>
+                <div class="box">
+                    <input class="hide-checkbox" id="toggle-mobile" type="checkbox">
+                    <label class="toggle-label" for="toggle-mobile">Moble App Connection</label>
+                </div>
+                <div class="box">
+                    <input class="hide-checkbox" id="toggle-cms" type="checkbox">
+                    <label class="toggle-label" for="toggle-cms">Content Management System</label>
+                </div>
+                <div class="box">
+                    <input class="hide-checkbox" id="toggle-logo" type="checkbox">
+                    <label class="toggle-label" for="toggle-logo">Custom Logo Design</label>
+                </div>
+                <div class="box">
+                    <input class="hide-checkbox" id="toggle-photo" type="checkbox">
+                    <label class="toggle-label" for="toggle-photo">Photo Galley</label>
+                </div>
+                <div class="box">
+                    <input class="hide-checkbox" id="toggle-video" type="checkbox">
+                    <label class="toggle-label" for="toggle-video">Video Gallery</label>
+                </div>
+                <div class="box">
+                    <input class="hide-checkbox" id="toggle-member" type="checkbox">
+                    <label class="toggle-label" for="toggle-member">Member Area</label>
+                </div>
+                <div class="box">
+                    <input class="hide-checkbox" id="toggle-paid" type="checkbox">
+                    <label class="toggle-label" for="toggle-paid">Paid Membership</label>
+                </div>
+                <div class="box">
+                    <input class="hide-checkbox" id="toggle-directory" type="checkbox">
+                    <label class="toggle-label" for="toggle-directory">Directory System</label>
+                </div>
+            </section>
+            <div id="total">
+                 $0
+            </div>
         </section>
     </section>
-
-
 
     <section id="form">
         <div id="googlemaps"></div>
@@ -203,8 +233,24 @@
         </div>
     </section>
     <script src="Scripts/wow.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.toggle-label').click(function() {
+
+                var total = 0;
+
+                $('.option:checked').each(function() {
+
+                    total += parseInt($(this).val());
+
+                });
+
+                $('#total').html('$' + total);
+            });
+
+        });
+    </script>
     <footer></footer>
-    <!--<script src="Scripts/wow.min.js"></script>-->
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyATmlM7e9f0GlQStj12WzGrDbsyH23ayPc"></script>
     <script type="text/javascript" src="Scripts/maps.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
