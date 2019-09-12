@@ -146,58 +146,71 @@
             <section class="calculator-row2">
                 <h2>User Login</h2>
                 <div class="box">
-                    <input class="hide-checkbox option" id="toggle-email" type="checkbox" value="100">
-                    <label class="toggle-label" for="toggle-email">Email & Password</label>
+                    <label class="toggle-label" for="toggle-email">
+                        <input class="hide-checkbox option" id="toggle-email" type="checkbox" value="100">Email & Password
+                    </label>
                 </div>
                 <div class="box">
-                    <input class="hide-checkbox option" id="toggle-social" type="checkbox" value="200">
-                    <label class="toggle-label" for="toggle-social">Social Media</label>
+                    <label class="toggle-label" for="toggle-social">
+                        <input class="hide-checkbox option" id="toggle-social" type="checkbox" value="150">Social Media
+                    </label>
                 </div>
                 <h2>Payment System</h2>
                 <div class="box">
-                    <input class="hide-checkbox" id="toggle-credit" type="checkbox">
-                    <label class="toggle-label" for="toggle-credit">Credit Card</label>
+                    <label class="toggle-label" for="toggle-credit">
+                        <input class="hide-checkbox option" id="toggle-credit" type="checkbox" value="400">Credit Card
+                    </label>
                 </div>
                 <div class="box">
-                    <input class="hide-checkbox" id="toggle-btc" type="checkbox">
-                    <label class="toggle-label" for="toggle-btc">Bitcoin</label>
+                    <label class="toggle-label" for="toggle-btc">
+                        <input class="hide-checkbox option" id="toggle-btc" type="checkbox" value="600">Bitcoin
+                    </label>
                 </div>
                 <h2>Additional Features</h2>
                 <div class="box">
-                    <input class="hide-checkbox" id="toggle-search" type="checkbox">
-                    <label class="toggle-label" for="toggle-search">Search Feature</label>
+                    <label class="toggle-label" for="toggle-search">
+                        <input class="hide-checkbox option" id="toggle-search" type="checkbox" value="600" >Search Feature
+                    </label>
                 </div>
                 <div class="box">
-                    <input class="hide-checkbox" id="toggle-mobile" type="checkbox">
-                    <label class="toggle-label" for="toggle-mobile">Moble App Connection</label>
+                    <label class="toggle-label" for="toggle-mobile">
+                        <input class="hide-checkbox option" id="toggle-mobile" type="checkbox" value="700">Moble App Connection
+                    </label>
                 </div>
                 <div class="box">
-                    <input class="hide-checkbox" id="toggle-cms" type="checkbox">
-                    <label class="toggle-label" for="toggle-cms">Content Management System</label>
+                    <label class="toggle-label" for="toggle-cms">
+                        <input class="hide-checkbox option" id="toggle-cms" type="checkbox" value="300">Content Management System
+                    </label>
                 </div>
                 <div class="box">
-                    <input class="hide-checkbox" id="toggle-logo" type="checkbox">
-                    <label class="toggle-label" for="toggle-logo">Custom Logo Design</label>
+                    <label class="toggle-label" for="toggle-logo">
+                        <input class="hide-checkbox option" id="toggle-logo" type="checkbox" value="200">Custom Logo Design
+                    </label>
                 </div>
                 <div class="box">
-                    <input class="hide-checkbox" id="toggle-photo" type="checkbox">
-                    <label class="toggle-label" for="toggle-photo">Photo Galley</label>
+                    <label class="toggle-label" for="toggle-photo">
+                        <input class="hide-checkbox option" id="toggle-photo" type="checkbox" value="150">Photo Galley
+                    </label>
                 </div>
                 <div class="box">
-                    <input class="hide-checkbox" id="toggle-video" type="checkbox">
-                    <label class="toggle-label" for="toggle-video">Video Gallery</label>
+                    <label class="toggle-label" for="toggle-video">Video Gallery
+                        <input class="hide-checkbox option" id="toggle-video" type="checkbox" value="25">
+                    </label>
                 </div>
                 <div class="box">
-                    <input class="hide-checkbox" id="toggle-member" type="checkbox">
-                    <label class="toggle-label" for="toggle-member">Member Area</label>
+                    <label class="toggle-label" for="toggle-member">Member Area
+                        <input class="hide-checkbox option" id="toggle-member" type="checkbox" value="175">
+                    </label>
                 </div>
                 <div class="box">
-                    <input class="hide-checkbox" id="toggle-paid" type="checkbox">
-                    <label class="toggle-label" for="toggle-paid">Paid Membership</label>
+                    <label class="toggle-label" for="toggle-paid">Paid Membership
+                        <input class="hide-checkbox option" id="toggle-paid" type="checkbox" value="250">
+                    </label>
                 </div>
                 <div class="box">
-                    <input class="hide-checkbox" id="toggle-directory" type="checkbox">
-                    <label class="toggle-label" for="toggle-directory">Directory System</label>
+                    <label class="toggle-label" for="toggle-directory">Directory System
+                        <input class="hide-checkbox option" id="toggle-directory" type="checkbox" value="500">
+                    </label>
                 </div>
             </section>
             <div id="total">
@@ -242,7 +255,7 @@
                 $('.option:checked').each(function() {
 
                     total += parseInt($(this).val());
-
+                    $(this).parent().toggleClass('toggle-label-checked');
                 });
 
                 $('#total').html('$' + total);
