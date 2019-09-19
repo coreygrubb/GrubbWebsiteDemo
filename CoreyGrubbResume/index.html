@@ -124,92 +124,92 @@
     <section id="pricing">
         <section id="price-calculator">
             <h1>Estimate the Cost of Your Site</h1>
-            <section class="calculator-row1">
+            <section class="marketing">
                 <h3>Number of Marketing Pages</h3>
-                <select id="select-pages">
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                    <option value="4">Four +</option>
+                <select id="select-pages" onchange="calculateTotal()">
+                    <option value="100">One</option>
+                    <option value="200">Two</option>
+                    <option value="300">Three</option>
+                    <option value="600">Four +</option>
                 </select>
             </section>
-            <h1>Website Category</h1>
-            <section class="calculator-row3">
-                <label for="radio1"><input type="radio" name="radio1" class="option" value="200" /> Blog</label><br>
-                <label for="radio1"><input type="radio" name="radio1" class="option" value="300" /> Business</label><br>
-                <label for="radio1"><input type="radio" name="radio1" class="option" value="400" /> Brochure</label><br>
-                <label for="radio1"><input type="radio" name="radio1" class="option" value="500" /> eCommerce</label><br>
-                <label for="radio1"><input type="radio" name="radio1" class="option" value="600" /> Portal</label><br>
-                <label for="radio1"><input type="radio" name="radio1" class="option" value="700" /> Social Media</label><br>
-                <label for="radio1"><input type="radio" name="radio1" class="option" value="0" /> Other</label>
+            <h2>Website Category</h2>
+            <section class="category">
+                <label for="radio1"><input type="radio" name="radio1" class="option-radio" onchange="calculateTotal()" value="200" /> Blog</label><br>
+                <label for="radio1"><input type="radio" name="radio1" class="option-radio" onchange="calculateTotal()" value="300" /> Business</label><br>
+                <label for="radio1"><input type="radio" name="radio1" class="option-radio" onchange="calculateTotal()" value="400" /> Brochure</label><br>
+                <label for="radio1"><input type="radio" name="radio1" class="option-radio" onchange="calculateTotal()" value="500" /> eCommerce</label><br>
+                <label for="radio1"><input type="radio" name="radio1" class="option-radio" onchange="calculateTotal()" value="600" /> Portal</label><br>
+                <label for="radio1"><input type="radio" name="radio1" class="option-radio" onchange="calculateTotal()" value="700" /> Social Media</label><br>
+                <label for="radio1"><input type="radio" name="radio1" class="option-radio" onchange="calculateTotal()" value="0" /> Other</label>
             </section>
             <section class="calculator-row2">
                 <h2>User Login</h2>
                 <div class="box">
                     <label class="toggle-label" for="toggle-email">
-                        <input class="hide-checkbox option" id="toggle-email" type="checkbox" value="100">Email & Password
+                        <input class="hide-checkbox option-checkbox" id="toggle-email" type="checkbox" value="100" >Email & Password
                     </label>
                 </div>
                 <div class="box">
                     <label class="toggle-label" for="toggle-social">
-                        <input class="hide-checkbox option" id="toggle-social" type="checkbox" value="150">Social Media
+                        <input class="hide-checkbox option-checkbox" id="toggle-social" type="checkbox" value="150">Social Media
                     </label>
                 </div>
                 <h2>Payment System</h2>
                 <div class="box">
                     <label class="toggle-label" for="toggle-credit">
-                        <input class="hide-checkbox option" id="toggle-credit" type="checkbox" value="400">Credit Card
+                        <input class="hide-checkbox option-checkbox" id="toggle-credit" type="checkbox" value="400">Credit Card
                     </label>
                 </div>
                 <div class="box">
                     <label class="toggle-label" for="toggle-btc">
-                        <input class="hide-checkbox option" id="toggle-btc" type="checkbox" value="600">Bitcoin
+                        <input class="hide-checkbox option-checkbox" id="toggle-btc" type="checkbox" value="600">Bitcoin
                     </label>
                 </div>
                 <h2>Additional Features</h2>
                 <div class="box">
                     <label class="toggle-label" for="toggle-search">
-                        <input class="hide-checkbox option" id="toggle-search" type="checkbox" value="600" >Search Feature
+                        <input class="hide-checkbox option-checkbox" id="toggle-search" type="checkbox" value="600" >Search Feature
                     </label>
                 </div>
                 <div class="box">
                     <label class="toggle-label" for="toggle-mobile">
-                        <input class="hide-checkbox option" id="toggle-mobile" type="checkbox" value="700">Moble App Connection
+                        <input class="hide-checkbox option-checkbox" id="toggle-mobile" type="checkbox" value="700">Moble App Connection
                     </label>
                 </div>
                 <div class="box">
                     <label class="toggle-label" for="toggle-cms">
-                        <input class="hide-checkbox option" id="toggle-cms" type="checkbox" value="300">Content Management System
+                        <input class="hide-checkbox option-checkbox" id="toggle-cms" type="checkbox" value="300">Content Management System
                     </label>
                 </div>
                 <div class="box">
                     <label class="toggle-label" for="toggle-logo">
-                        <input class="hide-checkbox option" id="toggle-logo" type="checkbox" value="200">Custom Logo Design
+                        <input class="hide-checkbox option-checkbox" id="toggle-logo" type="checkbox" value="200">Custom Logo Design
                     </label>
                 </div>
                 <div class="box">
                     <label class="toggle-label" for="toggle-photo">
-                        <input class="hide-checkbox option" id="toggle-photo" type="checkbox" value="150">Photo Galley
+                        <input class="hide-checkbox option-checkbox" id="toggle-photo" type="checkbox" value="150">Photo Galley
                     </label>
                 </div>
                 <div class="box">
                     <label class="toggle-label" for="toggle-video">Video Gallery
-                        <input class="hide-checkbox option" id="toggle-video" type="checkbox" value="25">
+                        <input class="hide-checkbox option-checkbox" id="toggle-video" type="checkbox" value="25">
                     </label>
                 </div>
                 <div class="box">
                     <label class="toggle-label" for="toggle-member">Member Area
-                        <input class="hide-checkbox option" id="toggle-member" type="checkbox" value="175">
+                        <input class="hide-checkbox option-checkbox" id="toggle-member" type="checkbox" value="175">
                     </label>
                 </div>
                 <div class="box">
                     <label class="toggle-label" for="toggle-paid">Paid Membership
-                        <input class="hide-checkbox option" id="toggle-paid" type="checkbox" value="250">
+                        <input class="hide-checkbox option-checkbox" id="toggle-paid" type="checkbox" value="250">
                     </label>
                 </div>
                 <div class="box">
                     <label class="toggle-label" for="toggle-directory">Directory System
-                        <input class="hide-checkbox option" id="toggle-directory" type="checkbox" value="500">
+                        <input class="hide-checkbox option-checkbox" id="toggle-directory" type="checkbox" value="500">
                     </label>
                 </div>
             </section>
@@ -218,7 +218,6 @@
             </div>
         </section>
     </section>
-
     <section id="form">
         <div id="googlemaps"></div>
         <div id="contactform">
@@ -247,21 +246,29 @@
     </section>
     <script src="Scripts/wow.js"></script>
     <script>
-        $(document).ready(function() {
-            $('.toggle-label').click(function() {
+            $('label').click(function () {
+                calculateTotal();
+            });
+
+            function calculateTotal() {
 
                 var total = 0;
 
-                $('.option:checked').each(function() {
+                total = parseInt(document.getElementById("select-pages").value);
+
+                $('.option-radio:checked').each(function() {
+
+                    total += parseInt($(this).val());
+                });
+
+                $('.option-checkbox:checked').each(function() {
 
                     total += parseInt($(this).val());
                     $(this).parent().toggleClass('toggle-label-checked');
                 });
 
                 $('#total').html('$' + total);
-            });
-
-        });
+            }
     </script>
     <footer></footer>
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyATmlM7e9f0GlQStj12WzGrDbsyH23ayPc"></script>

@@ -601,6 +601,7 @@ main {
         height: 850px;
         width: 100%;
         background: white;
+        background-image: linear-gradient(white, #808080);
     }
 }
 
@@ -613,18 +614,18 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 2500px;
+    height: 2000px;
     width: 100%;
-    background: black;
     justify-content: center;
     align-items: center;
-    text-align: center
+    text-align: center;
+    /*background-image: linear-gradient(white, black);*/
 }
 
 #price-calculator {
     display: flex;
     flex-direction: column;
-    background: red;
+    background-image: linear-gradient(white, #808080);
     height: 75%;
     width: 75%;
     max-width: 600px;
@@ -633,15 +634,15 @@ main {
     align-items: center;
 }
 
-.calculator-row1 {
+.marketing {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 100px;
     width: 100%;
-    margin: 25px;
-    background: lightblue;
+    /*margin: 25px;*/
+    /*background:red;*/
 }
 
 #select-pages {
@@ -650,14 +651,44 @@ main {
     font-size:1.2rem;
 }
 
+.category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+    height: 400px;
+    width: 100%;
+    margin: 25px;
+    font-size: 1.1rem;
+
+}
+
+.category label input {
+    position: relative;
+    right: 25px;
+}
+
+input[type=radio] {
+    padding: 0.5em;
+    -webkit-appearance: none;
+    outline: 0.1em solid black;
+    outline-offset: 0.1em;
+}
+
+input[type=radio]:checked {
+    display: inline-block;
+    background-color: #000;
+}
+
 .calculator-row2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    height:900px;
+    height: 800px;
     width: 100%;
-    background: lightblue;
+    /*background-image: linear-gradient(to top left, black, white);*/
 }
 
 .box {
@@ -712,36 +743,6 @@ main {
 .hide-checkbox {
     position: absolute;
     left: -9999px;
-}
-
-.calculator-row3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 50px;
-    height: 600px;
-    width: 100%;
-    margin: 25px;
-    background: lightblue;
-    font-size: 1.5rem;
-}
-
-.calculator-row3 label input {
-    position: relative;
-    right: 25px;
-}
-
-input[type=radio] {
-    padding: 0.5em;
-    -webkit-appearance: none;
-    outline: 0.1em solid black;
-    outline-offset: 0.1em;
-}
-
-input[type=radio]:checked {
-    display: inline-block;
-    background-color: #000;
 }
 
 #price-result{
