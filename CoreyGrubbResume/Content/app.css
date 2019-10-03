@@ -220,7 +220,6 @@ main {
 		display: flex;
 		flex-direction: row;
 		justify-content: left;
-		align-content: left
 	}
 
 	#icons {
@@ -237,10 +236,7 @@ main {
 	}
 
     #profile-pic {
-        /*height: 100%;
-        filter: grayscale(100%);*/
         float: right;
-        /*shape-outside: circle(50%);*/
     }
 }
 
@@ -591,13 +587,14 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /*background-image: linear-gradient(white, black);*/
+    background-image: linear-gradient(#808080, white);
 }
 
 #price-calculator {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(white, #808080);
+    /*background-image: linear-gradient(white, #808080);*/
+    background:white;
     height: 75%;
     width: 75%;
     max-width: 600px;
@@ -633,7 +630,6 @@ main {
     width: 100%;
     margin: 25px;
     font-size: 1.1rem;
-
 }
 
 .category label input {
@@ -722,6 +718,39 @@ input[type=radio]:checked {
     align-items:center;
     font-size:1.6rem;
     height:100px
+}
+
+@media screen and (min-width: 1600px) {
+
+    #price-calculator {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        height: 65%;
+        width: 75%;
+        max-width: 1500px;
+        border: double;
+        align-items:center
+    }
+
+    .marketing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+    }
+
+    .category {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+        height: 150px;
+        width: 1000px;
+        padding: 0
+    }
 }
 
 /*
@@ -848,7 +877,7 @@ fieldset {
 
 */
 
-#recommended {
+/*#recommended {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -1017,7 +1046,7 @@ iframe {
 		font-size: 15px
 	}
 
-}
+}*/
 
 /*
 	Footer
