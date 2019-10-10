@@ -569,7 +569,8 @@ main {
         height: 850px;
         width: 100%;
         background: white;
-        background-image: linear-gradient(white, #808080);
+        /*background-image: linear-gradient(white, #808080);*/
+        background-image: linear-gradient(#808080, white);
     }
 }
 
@@ -587,20 +588,21 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(#808080, white);
+    /*background-image: linear-gradient(#808080, white);*/
+    /*background-image: linear-gradient(white, #808080);*/
 }
 
 #price-calculator {
     display: flex;
     flex-direction: column;
-    /*background-image: linear-gradient(white, #808080);*/
-    background:white;
     height: 75%;
     width: 75%;
     max-width: 600px;
     min-width: 400px;
     border: double;
     align-items: center;
+    color: black;
+    background-color: rgba(0, 0, 0, .1);
 }
 
 .marketing {
@@ -615,7 +617,7 @@ main {
 }
 
 #select-pages {
-    height: 35%;
+    height: 45%;
     width: 75%;
     font-size:1.2rem;
 }
@@ -628,7 +630,7 @@ main {
     padding-left: 50px;
     height: 400px;
     width: 100%;
-    margin: 25px;
+    margin: 15px;
     font-size: 1.1rem;
 }
 
@@ -664,9 +666,9 @@ input[type=radio]:checked {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    border: solid;
+    border: solid 1px;
     border-color: lightgray;
-    width: 100%;
+    width: 85%;
     height: 45px;
     text-align: left;
     font-size: 1.5rem;
@@ -677,7 +679,8 @@ input[type=radio]:checked {
     position: relative;
     height: 100%;
     width: 100%;
-    padding-left: 50px
+    padding-left: 50px;
+    background:white;
 }
 
 .toggle-label::before {
@@ -687,13 +690,11 @@ input[type=radio]:checked {
     height:32px;
     width: 32px;
     left: 10px;
-    border: 3px solid #fff;
+    top: 5px;
+    border: 2px solid black;
     border-radius: 100px;
     transition: background-color .2s;
 }
-
-/*.toggle-label-checked {
-}*/
 
 .toggle-label-checked::before {
     content: '';
@@ -702,10 +703,10 @@ input[type=radio]:checked {
     height: 32px;
     width: 32px;
     left: 10px;
-    border: 3px solid #fff;
+    border: 3px solid black;
     border-radius: 100px;
     transition: background-color .2s;
-    background-color: #fff;
+    background-color: black;
 }
 
 .hide-checkbox {
@@ -725,12 +726,13 @@ input[type=radio]:checked {
     #price-calculator {
         display: flex;
         flex-direction: column;
-        background: white;
+        color: black;
+        background-color: rgba(0, 0, 0, .1);
         height: 65%;
         width: 75%;
         max-width: 1500px;
         border: double;
-        align-items:center
+        align-items: center;
     }
 
     .marketing {
@@ -745,12 +747,16 @@ input[type=radio]:checked {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         flex-wrap: wrap;
         height: 150px;
-        width: 1000px;
-        padding: 0
+        width: 1250px;
+        padding: 0;
+        background: white;
+        padding-left: 50px;
+        padding-top: 15px;
     }
+
 }
 
 /*
