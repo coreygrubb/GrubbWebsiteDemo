@@ -594,7 +594,7 @@ main {
     flex-direction:column;
     text-align:center;
     width:100%;
-    height:1000px;
+    height:1500px;
     justify-content:center;
     align-items:center;
 }
@@ -603,11 +603,6 @@ main {
    font-size:5.5rem;
    font-weight:bold;
 }
-
-/*#projects p{
-   font-size: 1.5rem;
-   max-width: 50%;
-}*/
 
 #project-list{
     display:flex;
@@ -625,16 +620,9 @@ main {
     align-content:center;
 }
 
-.project img{
-    padding-top:15px;
-    height: 50%;
-    width:100%;
-    max-width:600px
-}
-
 .proj-desc {
-    height:auto;
-    width:100%;
+    height: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -653,6 +641,44 @@ main {
 
 .proj-desc a{
     width:95%
+}
+
+@media screen and (min-width: 1000px) {
+    
+    #project-list{
+        display:flex;
+        flex-direction:column;
+        height:auto;
+        width:95%;
+        border: none;
+    }
+
+    .project {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1500px;
+    }
+
+    .proj-desc {
+        height:auto;
+        width:50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .proj-desc h4{
+        font-size: 35px;
+        font-weight:900
+    }
+
+    .proj-desc p{
+        font-size: 25px;
+        text-align: left;
+        width: 95%;
+        height: auto;
+    }
 }
 
 
@@ -779,6 +805,16 @@ fieldset {
 	Footer
 */
 
+#footer-icons {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+
 footer {
     display: flex;
     flex-direction:row;
@@ -791,12 +827,17 @@ footer {
 }
 
 #contact-info {
-    height: 100%;
-    width: 25%;
+    height: 75%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    max-width: 350px
+}
+
+#contact-info p {
+    padding-top: 10px;
 }
 
 #footer-linked-in {
