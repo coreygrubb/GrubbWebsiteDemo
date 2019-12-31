@@ -125,6 +125,26 @@
         <section id="project-list">
             <div class="project">
                 <div id-="proj-display">
+                    <form id="github-form">
+                        <div id="url">
+                            URL: hhtps:\\github.com
+                        </div>
+                        <div id="name">
+                            Name: 123
+                        </div>
+                        Followers: <input id="followers" type="text" name="followers"><br>
+                        <input type="button" value="Submit" onclick="UserAction()">
+                    </form>
+                </div>
+                <div class="proj-desc">
+                    <h4>Interactive Web Design</h4>
+                    <p id="tech">Technologies: JavaScript, jQuery, HTML, CSS</p>
+                    <p id="desc">jQuery Price Calculator: A simple website price estimation calculator. Whenever the user selects one of the items in the display, a script adds the value assigned to that item to the total calculation</p>
+                    <span><a href="https://github.com/coreygrubb/PriceCalc">View Project On GitHub</a></span>
+                </div>
+            </div>
+            <div class="project">
+                <div id-="proj-display">
                     <script src="https://gist.github.com/coreygrubb/905c35124f86e1d58db2fb77d689e433.js"></script>
                 </div>
                 <div class="proj-desc">
@@ -188,5 +208,6 @@
     <script type="text/javascript" src="Scripts/maps.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="Scripts/OnClicked.js"></script>
 </body>
 </html>
