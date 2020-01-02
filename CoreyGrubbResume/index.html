@@ -124,16 +124,15 @@
         <h1>Ongoing Projects</h1>
         <section id="project-list">
             <div class="project">
-                <div id-="proj-display">
+                <div id="proj-display">
                     <form id="github-form">
-                        <div id="url">
-                            URL: hhtps:\\github.com
-                        </div>
-                        <div id="name">
-                            Name: 123
-                        </div>
-                        Followers: <input id="followers" type="text" name="followers"><br>
-                        <input type="button" value="Submit" onclick="UserAction()">
+                        <fieldset id="github-search" name="search">
+                            <legend >Repository Details</legend>
+                            <label for="url">URL:<p id="url"></p></label>
+                            <label for="name">Name:<p id="name"></p></label>
+                            <label for="followers">Followers: <input id="followers" type="text"></label>
+                            <input type="button" value="Search" onclick="UserAction()">
+                        </fieldset>
                     </form>
                 </div>
                 <div class="proj-desc">
@@ -143,7 +142,7 @@
                     <span><a href="https://github.com/coreygrubb/PriceCalc">View Project On GitHub</a></span>
                 </div>
             </div>
-            <div class="project">
+            <div class="project"> 
                 <div id-="proj-display">
                     <script src="https://gist.github.com/coreygrubb/905c35124f86e1d58db2fb77d689e433.js"></script>
                 </div>
