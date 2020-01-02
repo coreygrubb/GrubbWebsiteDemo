@@ -771,8 +771,8 @@ legend{
 	margin: 0 0 10px;
 	min-width: 100%;
 	padding: 0;
-	width: 100%; */
-}
+	width: 100%;
+} */
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
 	width:100%;
