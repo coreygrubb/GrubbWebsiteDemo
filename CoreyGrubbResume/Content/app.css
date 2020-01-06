@@ -642,15 +642,23 @@ main {
 .proj-desc a{
     width:95%
 }
-
+/* 
 fieldset {
 	text-align: left;
 	border-radius: 25px;
 	border: 2px solid lightgrey;
-}
+} */
 
 legend{
 	margin: 5px;
+}
+
+#github-search{
+	min-width: 400px;
+	max-width: 600px;
+	text-align: left;
+	border-radius: 25px;
+	border: 2px solid lightgrey;
 }
 
 #name{
@@ -669,6 +677,14 @@ legend{
 	border: solid 2px lightgray;
 }
 
+#description{
+	height:100%;
+	width:100%;
+	min-width: 150px;
+	min-height: 25px;
+	border: solid 2px lightgray;
+}
+
 @media screen and (min-width: 1100px) {
     #project-list{
         display:flex;
@@ -679,15 +695,14 @@ legend{
         border: none;
     }
 
-    #projects p{
+    /* #projects p{
         font-size: 1.5rem;
-    }
+    } */
 
     .project {
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
-        max-width: 1500px;
+        max-width: 1250px;
     }
 
     .proj-desc {
