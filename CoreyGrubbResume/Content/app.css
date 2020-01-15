@@ -178,7 +178,7 @@ main {
 	filter: grayscale(100%);;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 300px) {
 	#pic {
         display:flex;
         flex-direction:column;
@@ -421,7 +421,7 @@ main {
 	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
-	height: 500px;
+	height: 750px;
 	width: 100%;
 	align-items: center;
 	max-width: 1200px;
@@ -457,6 +457,13 @@ main {
 	width: 100%;
 }
 
+@media screen and (min-width: 500px) {
+	#education{
+		height: 600px;
+		font-size: 15px;
+	}
+}
+
 @media screen and (min-width: 1000px) {
 	#education-desc{
 		display: flex;
@@ -478,7 +485,7 @@ main {
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
-	height: 550px;
+	height: 750px;
 	width: 100%;
 	align-items: center;
 	max-width: 1200px;
@@ -501,7 +508,7 @@ main {
 	width: 75%;
 	border: solid 3px black;
 	padding-left: 15px;
-	font-size: 15px;
+	font-size: 12px;
 }
 
 #experience-img{
@@ -514,6 +521,13 @@ main {
 	margin-top: 10px;
 	height: 75%;
 	width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+	#experience-desc{
+		height: 600px;
+		font-size: 15px;
+	}
 }
 
 @media screen and (min-width: 1000px) {
@@ -533,7 +547,7 @@ main {
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
-	height: 550px;
+	height: 750px;
 	width: 100%;
 	align-items: center;
 	max-width: 1200px;
@@ -569,6 +583,12 @@ main {
 	margin-top: 10px;
 	height: 75%;
 	width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+	#technologies{
+		height: 600px;
+	}
 }
 
 @media screen and (min-width: 1000px) {
@@ -641,8 +661,8 @@ legend{
 }
 
 #github-search{
-	min-width: 400px;
-	max-width: 600px;
+	min-width: 300px;
+	max-width: 500px;
 	text-align: left;
 	border-radius: 25px;
 	border: 2px solid lightgrey;
@@ -675,6 +695,13 @@ legend{
 #comming-soon img{
 	height: 100%;
 	width: 100%;
+}
+
+@media screen and (min-width: 1100px) {
+	#github-search{
+		min-width: 400px;
+		max-width: 600px;
+	}
 }
 
 @media screen and (min-width: 1100px) {
