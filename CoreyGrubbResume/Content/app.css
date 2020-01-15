@@ -30,35 +30,6 @@ a{
 	min-height: 1080px;
 }
 
-#header .scroll-down {
-	display: block;
-	position: absolute;
-	bottom: 0;
-	right: 5%;
-	text-align: center;
-	z-index: 6;
-	animation-name: wiggle;
-	animation-duration: 1s;
-	animation-timing-function: ease-out;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-
-@keyframes wiggle {
-	0% {
-		bottom: 15px;
-	}
-
-	100% {
-		bottom: 40px;
-	}
-}
-
-#arrow-icon {
-	font-size: 100px;
-	color: white;
-}
-
 .overlay-title {
     position: absolute;
     top: 0;
@@ -68,7 +39,7 @@ a{
     background-color: rgba(0, 0, 0, .35);
 }
 
-.container h1 {
+.header-title h1 {
     position: relative;
     color: white;
     font-size: 75px;
@@ -77,7 +48,7 @@ a{
     bottom: 100px
 }
 
-.container h1:after {
+.header-title h1:after {
 	content: "";
 	display: block;
 	margin: 0 auto;
@@ -87,7 +58,7 @@ a{
 	border-bottom: 1px solid #FFFFFF;
 }
 
-#title {
+#sub-title {
     position: relative;
     color: white;
     font-size: 75px;
@@ -98,15 +69,14 @@ a{
 
 @media screen and (min-width: 1600px) {
 
-    .container h1 {
+    .header-title h1 {
         bottom: 0px
     }
 
-    #title {
+    #sub-title {
         bottom: 50px
     }
 }
-
 
 /*
 	Profile
@@ -228,7 +198,7 @@ main {
 		justify-content: flex-end;
 	}
 
-	#profile-main {
+	#profile-desc {
 		width: 75%;
 		text-align: left;
 	}
@@ -279,15 +249,7 @@ main {
 	width: 100%;
 	align-items: center;
     justify-content:center;
-	/* font-size: 1rem; */
 }
-
-/* #development h2 {
-	font-size: 2.8rem;
-	text-align: center;
-	margin: 3rem;
-	font-weight: 700;
-} */
 
 .tile {
     height: 25%;
@@ -401,7 +363,7 @@ main {
     }
 }
 
-#wrap{
+#categories{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -470,10 +432,11 @@ main {
 		flex-direction: row;
 		justify-content: space-evenly;
 		align-items: center;
+		font-size: 25px;
 	}
 
 	#high-school{
-		padding-bottom: 80px
+		padding-bottom: 150px
 	}
 }
 
@@ -536,6 +499,7 @@ main {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
+		font-size: 20px;
 	}
 }
 
@@ -596,6 +560,7 @@ main {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		font-size: 20px;
 	}
 }
 
